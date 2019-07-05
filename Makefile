@@ -4,8 +4,6 @@ default:
 
 install: requirements
 	cp taipan/Config/ExternalUris.py-sample taipan/Config/ExternalUris.py
-	mkdir results
-	mkdir cache
 
 test:
 	python -m unittest discover -s ./taipan/Tests -p "*Test.py"
@@ -65,9 +63,7 @@ clean-windows-characters:
 	bash scripts/cleanWindowsCharacters.sh
 
 requirements:
-	pip install numpy
-	pip install requests
-	pip install SPARQLWrapper
+	pip install -r requirements.txt
 
 requirements-server:
 	pip install flask

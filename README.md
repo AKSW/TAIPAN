@@ -2,16 +2,27 @@
 Web Tables Automatic Property Mapping
 
 ## Installation
+Here we present two different ways to install TAIPAN
+1. With virtualenvwrapper:
 Install the project into python [virtualenv](https://virtualenvwrapper.readthedocs.org/en/latest/) and run make install:
 ```
    mkvirtualenv taipan
    cdvirtualenv
    mkdir src
    cd src/
-   git clone https://github.com/AKSW/TAIPAN.git
+   git clone https://github.com/dice-group/TAIPAN.git
    cd TAIPAN/
-   make requirements
+   make install
 ```
+2. With virtualenv
+```
+   git clone https://github.com/dice-group/TAIPAN.git
+   cd TAIPAN/
+   virtualenv -p /usr/bin/python .venv
+   source .venv/bin/activate
+   make install
+```
+
 
 To run annotation web UI flask application (server/run.py) you will have to setup google and mongolab connectors with your credentials. Also, additional dependencies are required by the app (make requirements-server).
 

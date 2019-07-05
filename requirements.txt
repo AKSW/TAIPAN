@@ -1,0 +1,12 @@
+agdistispy==1.0.5
+certifi==2019.6.16
+chardet==3.0.4
+idna==2.8
+isodate==0.6.0
+numpy==1.16.4
+pyparsing==2.4.0
+rdflib==4.2.2
+requests==2.22.0
+six==1.12.0
+SPARQLWrapper==1.8.4
+urllib3==1.25.3
